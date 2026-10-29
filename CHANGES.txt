@@ -1,0 +1,45 @@
+GRAVITY GRIND - Changes from the design document (one-pager)
+
+KEPT FROM THE PLAN
+- 2D physics ball racer with two kinds of courses: 3 tabletop tilt mazes and 3 side-view courses.
+- Tabletop: tilt the board with the mouse (WASD / arrows also work), avoid holes, reach the finish hole.
+- Side view: A/D (or arrows) to roll, Space to jump.
+- Timer, best time per course (saved), and a see-through ghost ball that replays your best run.
+- Checkpoints: falling sends you back to the last checkpoint and the clock keeps running.
+- Game flow: Title/Menu -> Course -> 3-2-1 countdown -> Run -> Results (Retry / Next / Menu). R restarts, Esc pauses.
+- The tilt is done by pushing the ball and leaning the camera, not by rotating the physics level
+  (this was the plan in the "Concerns" section and it kept the physics stable).
+
+ADDED
+- Medals: every course has gold / silver / bronze target times, shown as stars on the results screen and menu.
+- Time bonus pickups: stars (tabletop) and coins (side view) take 1 second off your time.
+- Tabletop extras: keys and gold lock blocks, spinning bars, angled corner wedges, boost pads,
+  portals (teleport pairs), pinball bumpers, trapdoors that open and close on a timer, and narrow
+  bridges lined with holes.
+- Side-view extras: springs, spikes, one-way platforms, slippery ice, pushable crates, key + lock, steep and
+  gentle slopes, boost pads, moving platforms, an elevator, crumbling blocks, and gravity-flip fields that
+  let you roll along the ceiling (with ceiling spikes and holes in the ceiling you can "fall up" through).
+- Extra inspiration for the new mechanics: Super Monkey Ball (narrow bridges), Marble Madness and pinball
+  (bumpers, boosts), Portal (teleporters), Sonic (speed pads), Celeste (crumbling blocks), VVVVVV (gravity flips).
+- Better jump feel: jump buffering, "coyote time" after rolling off a ledge, and shorter hops when you let go of jump early.
+- Camera leans with the tilt on tabletop courses so the board looks like it is tipping. Camera shake on big hits.
+- Particles: dust while rolling, sparks on hard hits, bursts on spikes/checkpoints, confetti at the finish.
+- The menu shows each course's best time and medal. A "Reset times" button clears saves and ghosts.
+
+CHANGED / CUT
+- Background music was cut. The project rubric asks for game sounds instead of a music loop, so the
+  "M to toggle music" control was removed. The rolling sound (pitch and volume follow the ball's speed)
+  is the main "satisfying" sound instead.
+- The local level editor (the stretch goal in my one-pager) WAS built: Main Menu -> Level Editor.
+  3 save slots for tabletop and 3 for side view, every piece from the game is in the palette,
+  left click places, right click erases, Q/E switches pieces, Play Test jumps straight in and
+  Esc / Menu goes back to editing. Levels save as text files on the computer, same format as the
+  built-in courses. (Online sharing is still cut.)
+- Courses are written as text maps in Levels.cs and built when the course loads, instead of being placed
+  by hand in Unity scenes. This made the courses much faster to design and change.
+- Second playtest: the key on Flip Side became a "shy key" that hops away and taunts you a few
+  times before it can be caught. Slope tiles were redrawn at higher resolution so the slanted
+  ground has a clean, smooth edge. Medal times were set from my own best times.
+- First playtest: the courses were too short and easy, so all six were redesigned bigger and harder
+  (tabletop boards went from 22x13 to 28x16 tiles, side-view courses from about 90 to 130-160 tiles long).
+- Course names: Wooden Warmup, Portal Lock, Pinball Panic (tabletop); Rolling Hills, Crumble Canyon, Flip Side (side view).

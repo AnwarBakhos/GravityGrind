@@ -1,0 +1,16 @@
+GRAVITY GRIND - Credits
+
+Art (all CC0 / public domain, by Kenney - www.kenney.nl)
+  - Rolling Ball Assets: board, walls, holes, balls, stars, key, lock, spinners, buttons
+  - Pixel Platformer: side-view ground, platforms, spikes, springs, flags, coins, key, lock, crate, backgrounds
+  - Slope tiles, ice-top tile and the pixel balls were made by editing/combining Pixel Platformer tiles
+  - Boost pads, gravity fields, bumper and trapdoor sprites were drawn for this game with a script
+
+Sound (all CC0, by Kenney)
+  - Impact Sounds (wood / soft / metal hits)
+  - Digital Audio (jump, spring, falls, coin, key, finish, new best)
+  - Interface Sounds and UI Audio (checkpoint, unlock, countdown, menu clicks)
+  - The rolling sound (rolling.wav) is a made-for-this-game loop of filtered noise
+
+Font
+  - Lilita One by Juan Montoreano (SIL Open Font License, see Assets/Resources/Fonts/LilitaOne_OFL.txt)
