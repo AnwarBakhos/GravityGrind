@@ -1,0 +1,22 @@
+Gravity Grind
+by Anwar Bakhos
+
+A 2D ball-rolling time-trial game made in Unity 6 (6000.5.9f1). Two modes: **Tabletop** (tilt the board with the mouse) and **Side View** (roll and jump). Race your best-time ghost, earn medals, and build your own courses in the level editor.
+
+## Where things are
+| Folder / file | What's in it |
+|---|---|
+| `Assets/Scripts/` | **All the game code** (start with `Game.cs`) |
+| `Assets/Resources/` | Art, sounds and font (Kenney CC0 packs + a few made for this game) |
+| `Assets/Scenes/SampleScene.unity` | The one scene the game runs in |
+| `CustomLevels/` | Levels I made with the in-game editor |
+| `CHANGES.txt` | Changes from my design doc |
+| `CREDITS.txt` | Where the art, sounds and font came from |
+| `AI_NOTES.txt` | How AI was used |
+| `Packages/`, `ProjectSettings/` | Unity's own settings (needed to open the project) |
+
+## How to play
+Open the folder in Unity Hub, open `Assets/Scenes/SampleScene`, press Play.
+- Tabletop: move the mouse to tilt. Side view: A/D to roll, Space to jump.
+- R restarts, Esc pauses.
+```
